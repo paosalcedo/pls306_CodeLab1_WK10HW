@@ -17,6 +17,7 @@ public class Loader : MonoBehaviour {
 		for (int i = 0; i < loadAD.posArray.Length; i++) {
 			asteroids[i] = Instantiate(Resources.Load ("Prefabs/Sphere") as GameObject);
 			asteroids[i].transform.position = loadAD.posArray[i]; 
+			asteroids[i].transform.localScale = loadAD.scaleArray[i];
 		}
 
 	}
